@@ -1,4 +1,5 @@
 import React from 'react'
+import Wide from './Wide'
 
 function Main() {
   return (
@@ -35,7 +36,11 @@ function Main() {
         <p className='text-sm opacity-75 whitespace-pre'>{`Home  >  Hosting for all  >  Hosting  >  Hosting6  >  Hosting5`}</p>
       </section>
       <section className="items">
-        <wideElement/>
+        <Wide/>
+        <Wide/>
+        <Wide/>
+        <Wide/>
+        <Wide/>
       </section>
     </div>
     </div>

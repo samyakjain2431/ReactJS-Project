@@ -1,9 +1,13 @@
+import React from "react"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Error from './Components/Error';
 import Main from './Components/Main';
-import WideElement from './Components/wideElement';
+// import Wide from "./Components/Wide";
+// import WideElement from './Components/Wide';
+
+
 
 function App() {
   return (
@@ -11,7 +15,8 @@ function App() {
       
       <BrowserRouter>
       <Navbar/>
-      <WideElement/>
+      {/* <Wide/> */}
+      {/* <WideElement/> */}
         <Routes>
           <Route path="/" element={<Main/>}/>
           <Route path="*" element={<Error/>}/>
