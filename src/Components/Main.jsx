@@ -1,13 +1,16 @@
 import React from 'react'
 import Wide from './Wide'
+import { Data } from './Data'
+import Square from './Square'
 
 function Main() {
   return (
     <div>
+      
 
-    <div className='max-w-[1000px] mx-auto px-6 '>
+    <div className='max-w-[1300px] mx-auto px-6 text-left '>
       <section className="upper-area text-left">
-        <h1 className='text-[30px]'>Best Website builders in the US</h1>
+        <h1 className='text-[30px] my-5'>Best Website builders in the US</h1>
         <hr />
         <div className="flex text-xs opacity-50 items-center py-1   justify-between">
           <div className="flex gap-5 ">
@@ -33,14 +36,37 @@ function Main() {
           <li className='p-3 '>BlueHosting</li>
           {/* <li className='p-3 '>Tools</li> */}
         </ul>
-        <p className='text-sm opacity-75 whitespace-pre'>{`Home  >  Hosting for all  >  Hosting  >  Hosting6  >  Hosting5`}</p>
+        <p className='text-sm opacity-75 md:whitespace-pre'>{`Home  >  Hosting for all  >  Hosting  >  Hosting6  >  Hosting5`}</p>
       </section>
       <section className="items">
-        <Wide/>
-        <Wide/>
-        <Wide/>
-        <Wide/>
-        <Wide/>
+        {
+          Data && Data.map ((elem) =>{
+            return(
+              <Wide key={elem.id} elem = {elem}/>
+
+            )
+          })
+        }
+        
+      </section>
+
+      <section className='moreItems my-3 '>
+        <h2 className='text-2xl my-10'>Related Deals You Might Like</h2>
+        <div className='flex items-center md:flex-row flex-col gap-3 md:justify-evenly  '>
+          
+        <Square/>
+        <Square/>
+        <Square/>
+        </div>
+      </section>
+      <section className="signup md:flex
+       justify-between items-center my-10 ">
+        <p className="text-2xl md:w-max my-5">Sign up and get special exclusive deals </p>
+
+          <div className='flex justify-center items-center border rounded-lg'>
+            <input type="text" name="email" id="email" className='p-3 w-full rounded-l-lg' placeholder='enter email' />
+            <button type="submit"> <i className=" text-white bg-blue-500 p-4  w-20 rounded-r-lg fa fa-search" /></button>
+          </div>
       </section>
     </div>
     </div>
