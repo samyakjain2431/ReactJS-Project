@@ -8,7 +8,7 @@ export default function Wide(props) {
   return (
     <div className='text-left my-3 py-8 grid md:grid-cols-4  gap-5 '>
       <span className='md:self-center justify-self-start absolute rounded-full border-2  w-10 flex items-center justify-center h-10'>{props.elem.id}</span>
-      <span className={props.elem.tag === 'none'? "hidden" : 'px-8 rounded-md py-2 bg-orange-500 text-white md:justify-self-auto justify-self-end absolute '}>{props.elem.tag}</span>
+      <span className={props.elem.tag === 'none'? "hidden" : 'px-8 rounded-md py-2 bg-orange-500 text-white md:justify-self-auto justify-self-end absolute '}><i className={props.elem.tag === 'Best choice'? 'fa fa-trophy': 'fa fa-diamond'} /> {props.elem.tag}</span>
       <div className="img w-full">
         <img className='md:w-1/2 my-8 mx-auto mt-5' src='https://s3-alpha-sig.figma.com/img/3250/2fc6/187db358671328189d3da83955a6ffe9?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ax2xncFBKe1xE2EsxdvElceh8oIqKj5N0jH4NJTiBcahukOzPxx4h1z6yHWL5iAGwcZziaBWfUhJnOIkYfeTkuKTAQ3cZ0jcc19S7zOzX3YtV8qd2foEnwflcvKEK8-iqw~VegstF5Nw8QROw9i36ihQaXHBsSdmfGb7V~XdDUKn2fabEOEcm2tN9ETF0zbCn6Tq~PYk9pxyghi5P3ugATGWGP8ljAH8tlJzjgbGXnUBNNTS4sfQDZNsmBvFmdtbDb28LeFrh~MRRFxi7hGf1M9mBH8gyb7qPYFk0pRsrwIdNrDPTsn0IaF8FPwAR8zL3wCBUlfMgzxP1E-gqRbjxQ__' alt="" />
       </div>
@@ -19,7 +19,7 @@ export default function Wide(props) {
         <p className={show? `block`: `hidden`}>{props.elem.moreDescription}</p>
         <p className='text-blue-500' onClick={toggleShow}>{show? 'show less':'show more'}</p>
       </div>
-      <div className="more w-full px-3 justify-self-center">
+      <div className="more w-full px-3 justify-between flex-col ">
         <div className="box mb-5 w-full md:w-min  rounded-md bg-blue-100 px-5 py-2  mx-auto flex flex-col justify-center items-center">
             <p className='text-xl'>{props.elem.rating}</p>
             <p className='text-xs my-2 '>Exceptional</p>

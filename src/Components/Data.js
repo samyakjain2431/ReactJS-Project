@@ -26,22 +26,5 @@ export const Data = [
         imageUrl: "https://example.com/fashionable-backpack.jpg",
         rating: 7.4
     },
-    {
-        id: 4,
-        title: "Master the Art of Cooking: An In-Depth Masterclass to Elevate Your Culinary Skills",
-        mainDescription: "Unlock the secrets of gourmet cooking with our comprehensive masterclass. Led by world-renowned chefs, this course is designed to transform your cooking from ordinary to extraordinary.",
-        moreDescription: "Learn the art of cooking through detailed, step-by-step guidance from culinary experts. This masterclass covers everything from basic techniques to advanced recipes, ensuring you gain the confidence and skills to create stunning dishes. Whether you're a beginner or an experienced cook, our course will inspire you to explore new flavors and elevate your culinary repertoire.",
-        tag: "Best choice",
-        imageUrl: "https://example.com/cooking-masterclass.jpg",
-        rating: 9.5
-    },
-    {
-        id: 5,
-        title: "Next-Gen Fitness Tracker: Revolutionize Your Health and Fitness Journey",
-        mainDescription: "Step into a new era of health and fitness with our Next-Gen Fitness Tracker. This advanced device is designed to offer unparalleled insights into your physical activity, health metrics, and overall well-being.",
-        moreDescription: "Monitor your workouts, sleep patterns, and health data with precision. Our fitness tracker is equipped with cutting-edge sensors and technology to provide you with real-time feedback on your fitness journey. With its sleek design and user-friendly interface, it's the perfect companion for anyone looking to take their health and fitness goals to the next level.",
-        tag: "Best Value",
-        imageUrl: "https://example.com/fitness-tracker.jpg",
-        rating: 8.8
-    }
+    
 ]
